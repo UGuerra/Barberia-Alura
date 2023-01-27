@@ -1,0 +1,320 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CSS para el Header General del sitio*/
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+#cabecera{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cabecera nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+#cabecera nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#cabecera nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#cabecera nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*CSS para la pagina principal Home*/
+.banner{
+    width: 100%;
+}
+
+#home h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    clear: left;
+}
+
+#home .intro{
+    padding: 3em 0;
+    background: #FEFEFE;
+}
+
+#home .intro div{
+    width: 940px;
+    margin: 0 auto;
+}
+
+#home .intro img{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#home .intro p{
+    margin-bottom: 1em;
+}
+
+#home .intro strong{
+    font-weight: bold;
+}
+
+#home .intro em{
+    font-style: italic;
+}
+
+#home .ubicacion{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+#home .ubicacion div{
+    width: 940px;
+    margin: 0 auto;
+}
+
+#home .ubicacion p{
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#home .diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(#888888, #555555);
+}
+
+#home .diferenciales div{
+    width: 640px;
+    margin: 0 auto;
+}
+
+#home .diferenciales ul{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .diferenciales li{
+    line-height: 1.5;
+    transition: 100ms;
+}
+
+#home .diferenciales li::before{
+    content: "★ ";
+}
+
+#home .diferenciales li:hover{
+    scale: 120%;
+    font-weight: bolder;
+    cursor: default;
+}
+
+#home .diferenciales li:first-child{
+    font-weight: bold;
+}
+
+#home .diferenciales img{
+    width: 60%;
+    transition: 500ms;
+}
+
+#home .diferenciales img:hover{
+    box-shadow: 10px 10px 10px black;
+}
+
+#home .diferenciales img:active{
+    opacity: 50%;
+}
+
+#home .video{
+    padding-bottom: 3em;
+    background: linear-gradient(#555555, #111111);
+}
+
+#home .video div{
+    width: 560px;
+    margin: 0 auto;
+}
+
+/*CSS para la pagina del Catalogo*/
+#catalogo ul{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#catalogo li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000 ;
+    border-radius: 10px;
+
+}
+
+#catalogo li:hover{
+    border-color: #C78C19 ;
+}
+
+#catalogo li:active{
+    border-color: #088C19;
+}
+
+#catalogo h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#catalogo li:hover h2{
+    font-size: 33px;
+}
+
+#catalogo p{
+    font-size: 18px;
+}
+
+#catalogo h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*CSS para la pagina de Contacto*/
+#contacto{
+    width: 940px;
+    margin: 0 auto;
+}
+
+#contacto form{
+    margin: 40px 0;
+}
+
+#contacto .requeridos{
+    cursor: text;
+}
+
+#contacto form label, #contacto fieldset legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#contacto .input-vertical{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#contacto .checkbox{
+    margin: 20px 0;
+}
+
+#contacto .enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 500ms background;
+    cursor: pointer;
+}
+
+#contacto .enviar:hover{
+    background: red;
+    transform: scale(1.03);
+}
+
+#contacto table{
+    margin: 40px;
+}
+
+#contacto thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+#contacto td, #contacto th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*CSS para el Footer General del sitio*/
+footer{
+    text-align: center;
+    background: url(imagenes/catalogo/bg.jpg);
+    padding: 40px;
+}
+
+#Copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px) {
+    #cabecera,
+    #home .intro div,
+    #home .ubicacion div,
+    #home .diferenciales div,
+    #home .video div,
+    #catalogo ul,
+    #contacto{
+        width: auto;
+    }
+    
+    #cabecera h1{
+        text-align: center;
+    }
+
+    #cabecera nav {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    #catalogo li {
+        display:block;
+        width: auto;
+        margin: 10px 1.5%;
+    }
+
+    #contacto form{
+        padding: 0 10%;
+    }
+
+    #contacto .input-vertical{
+        width: 80%;
+    }
+
+    #contacto .enviar {
+        width: 100%;
+    }
+
+    #contacto table {
+        margin: 40px auto;
+    }
+}

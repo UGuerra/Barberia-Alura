@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Barberia Alura - Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div id="cabecera">
+                <h1><img src="imagenes/catalogo/logo.png" alt="Barberia Alura Logo-Blk "></h1>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="contacto">
+            <form>
+                <fieldset class="requeridos">
+                    <label for="nombrecompleto">Nombre y Apellido:</label>
+                    <input type="text" id="nombrecompleto" class="input-vertical" placeholder="Nombre Apellido" required>
+
+                    <label for="email">eMail:</label>
+                    <input type="email" id="email" class="input-vertical" placeholder="ejemplo@dominio.com" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" class="input-vertical" placeholder="XXX XXX XXXX" required>
+
+                    <label for="msgtexto">Mensaje:</label>
+                    <textarea cols="70" rows="10" id="msgtexto" class="input-vertical"></textarea>
+                </fieldset> 
+
+                <fieldset>
+                    <legend>¿Cómo le gustaría ser contactado?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contacto" value="email" id="radio-email">
+                        eMail
+                    </label>
+                    <label for="radio-telefono">
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                        Teléfono
+                    </label>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Cúal horario de atención es de su preferencia?</legend>
+                    <select>
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde" >Tarde </option>
+                        <option value="noche" >Noche </option>
+                    </select>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox" class="checkbox" checked>
+                    Me gustaria recibír novedades a cerca de Barbería Alura
+                </label>
+
+                <input type="submit" value="Aceptar" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00 ~ 20:00 hs</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00 ~ 20:00 hs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00 ~ 20:00 hs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+ 
+        <footer>
+            <img src="imagenes/catalogo/logo-blanco.png" alt="Barberia Alura Logo-Wht">
+            <p id="Copyright">&copy Copyright Barbería Alura - 2020</p>
+        </footer>
+ 
+    </body>
+</html>
+</html>
